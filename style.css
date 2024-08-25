@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 0.8rem;
+}
+body {
+  min-height: 100vh;
+  background: #1d1d1d;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+header {
+  display: flex;
+}
+.header-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  font-size: 5rem;
+}
+.header-left-container h3 {
+  color: #474cfe;
+  font-size: 2rem;
+}
+.header-right {
+  width: 50%;
+}
+#modem {
+  width: 100%;
+}
+
+.infos {
+  display: flex;
+  /* justify-content: space-between; */
+  background: #010101;
+  border-radius: 10px;
+}
+.infos-left {
+  width: 33%;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: none;
+  background: #474cfe;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: rgb(239, 239, 239);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+.infos-right {
+  width: 67%;
+}
+.investors {
+  display: flex;
+  /* si j'avais pas fait align-items center, les images prenaient toute la hauteur */
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.img-container img {
+  height: 60px;
+}
+
+/* **********************MEDIA QUERIES********************* */
+
+/* @media screen and (max-width: 1209px) {
+    h1 {
+        font-size: 4rem;
+    }
+} */
+
+/* @media screen and (max-width: 1095px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .header-left-container h3 {
+        font-size: 1.5rem;
+    }
+} */
+
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-left-container h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  nav ul {
+    width: 65%;
+  }
+  header {
+    display: block;
+  }
+  .header-left {
+    width: 100%;
+  }
+  .header-right {
+    width: 100%;
+  }
+  .infos {
+    display: block;
+    text-align: center;
+  }
+  .infos-left {
+    width: 100%;
+  }
+  .btn-container {
+    align-items: center;
+  }
+  .infos-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  nav li {
+    font-size: 0.8rem;
+  }
+  .img-container img {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 384px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
